@@ -17,7 +17,7 @@ try {
 
     http_response_code($e->getCode());
 
-    echo $e->getMessage();
+    echo json_encode($e->getMessage());
 
 } catch (Exception $e) {
     echo $e->getMessage();
